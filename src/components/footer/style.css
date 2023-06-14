@@ -1,0 +1,21 @@
+/*__FOOTER__*/
+
+
+.footer {
+   background-color: var(--mint);
+}
+
+.footer__list {
+   display: flex;
+   gap: 40px;
+   align-items: center;
+   justify-content: center;
+   padding: 60px 0;
+}
+.footer__link {
+   cursor: pointer;
+   transition: all 0.2s ease-in;
+}
+.footer__link:hover {
+   opacity: 0.8;
+}

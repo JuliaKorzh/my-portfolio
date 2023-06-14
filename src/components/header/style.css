@@ -1,0 +1,58 @@
+/*__HEADER__*/
+
+
+.header {
+   background-color: var(--mint);
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+ 
+}
+
+.header__img{
+   z-index: 1;
+   position: absolute;
+   top: 10%;
+   left: 30%;
+   animation: rotation 30s infinite linear;
+}
+
+
+.header__inner {
+   max-width: 630px;
+   text-align-last: center;
+   z-index: 2;
+}
+
+.header__title {
+   font-weight: 500;
+   font-size: 60px;
+   line-height: 140%;
+   color: var(--white);
+   margin-bottom: 60px;
+}
+
+.header__title strong{
+   font-weight: 700;
+}
+
+.header__title  span{
+   color: var(--carrot);
+}
+
+.btn {
+   max-width: 160px;
+   padding: 12px 28px;
+   background-color: var(--orange);
+   color: var(--white);
+   border-radius: 5px;
+   text-align: center;
+   cursor: pointer;
+   transition: all 0.2s ease-in;
+}
+.btn:hover{
+   background-color: var(--carrot);
+}
