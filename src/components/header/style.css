@@ -15,15 +15,12 @@
 .header__img{
    z-index: 1;
    position: absolute;
-   top: 10%;
-   left: 30%;
    animation: rotation 30s infinite linear;
 }
 
-
 .header__inner {
    max-width: 630px;
-   text-align-last: center;
+   text-align: center;
    z-index: 2;
 }
 
@@ -55,4 +52,20 @@
 }
 .btn:hover{
    background-color: var(--carrot);
+}
+
+@media (max-width: 670px){
+   .header__title{
+      font-size: 50px;
+   }
+}
+@media (max-width: 560px){
+   .header__title{
+      font-size: 40px;
+   }
+}
+@media (max-width: 420px){
+   .header__title{
+      font-size: 30px;
+   }
 }

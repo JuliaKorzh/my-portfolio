@@ -9,6 +9,7 @@
    display: flex;
    flex-direction: column;
    gap: 15px;
+   align-items: center;
    transition: all 0.2s ease;
 }
 
@@ -27,4 +28,22 @@
    font-weight: 700;
    font-size: 24px;
    color: var(--white);
+}
+
+@media (max-width: 430px){
+   .projects__item {
+      min-width: 350px;
+   }
+   .projects__img {
+      max-width: 320px;
+   }
+}
+
+@media (max-width: 360px){
+   .projects__item {
+      min-width: 300px;
+   }
+   .projects__img {
+      max-width: 270px;
+   }
 }

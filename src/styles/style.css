@@ -18,7 +18,6 @@ font-family: 'Poppins', sans-serif;*/
 @keyframes rotation {
    from {
       transform: rotate(0deg);
-
    }
    to {
       transform: rotate(359deg);
@@ -37,13 +36,7 @@ html, body{
    display: flex;
    flex-direction: column;
    overflow: hidden;
-   min-height: 100%;
-}
-
-.container{
-   max-width: 1200px;
-   margin: 0 auto;
-   padding: 0 15px;
+   min-height: 100vh;
 }
 
 .section{
@@ -52,7 +45,7 @@ html, body{
 }
 
 .footer{
-   flex: 0 0 auto;
+ flex: 0 0 auto;
 }
 
 .title-section {
@@ -64,6 +57,16 @@ html, body{
    margin-bottom: 50px;
 }
 
+@media(max-width: 520px){
+   .title-section{
+      font-size: 50px;
+   }
+}
+@media(max-width: 420px){
+   .title-section{
+      font-size: 40px;
+   }
+}
 
 
 
@@ -71,6 +74,7 @@ html, body{
 .section-skills{
    max-height: 1000px;
    height: 100%;
+   padding: 60px 0;
 }
 .skills__inner {
    display: flex;
@@ -78,6 +82,7 @@ html, body{
    gap: 20px;
    justify-content: center;
    align-items: center;
+   padding: 0 30px;
 }
 .skills__inner .title-section{
    color: var(--orange);
@@ -87,11 +92,17 @@ html, body{
    font-weight: 700;
    font-size: 40px;
 }
+@media(max-width: 520px){
+   .skills__title{
+      font-size: 30px;
+   }
+}
 
 .skills__text{
    font-size: 18px;
    line-height: 150%;
    margin-bottom: 20px;
+   text-align: center;
 }
 
 
@@ -99,6 +110,7 @@ html, body{
 
 .section-projects{
    background-color: var(--pink);
+   padding: 60px 0;
 }
 
 .projects {
@@ -107,10 +119,11 @@ html, body{
    flex-wrap: wrap;
    align-items: center;
    justify-content: center;
+   padding: 0 20px;
 }
 
-/*__PROJECT__*/
 
+/*__PROJECT__*/
 
 .project__inner .title-section{
    color: var(--orange);
@@ -121,6 +134,7 @@ html, body{
    flex-direction: column;
    align-items: center;
    justify-content: center;
+   padding: 0 20px;
 }
 
 .project__img{
@@ -132,7 +146,8 @@ html, body{
 }
 
 .project__img img{
-   border-radius: 10px;}
+   border-radius: 10px;
+}
 
 .project__skills{
    margin-bottom: 30px;
@@ -154,9 +169,8 @@ html, body{
 
 .project__link:hover{
    background-color: var(--orange);
-
-  
 }
+
 .project__link p{
    font-weight: 500;
    font-size: 16px;
@@ -166,10 +180,21 @@ html, body{
 }
 
 
+@media(max-width: 670px){
+   .project__img{
+      padding: 20px;
+   }
+}
+
+@media(max-width: 420px){
+   .project__skills{
+      font-size: 18px;
+   }
+}
+
 /*__CONTACTS__*/
 .section-contacts{
-   max-height: 1000px;
-   height: 100%;
+   padding: 60px 0;
 }
 
 .contacts__inner{
@@ -187,6 +212,11 @@ html, body{
 .contacts__title{
    font-weight: 700;
    font-size: 40px;
+}
+@media(max-width: 520px){
+   .contacts__title{
+      font-size: 30px;
+   }
 }
 
 .contacts__info{
